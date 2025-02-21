@@ -1,0 +1,109 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('In Yoiiatin We Trust YOI (5400 x 3200 px).png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    overflow: auto;
+}
+
+/* Header styles */
+header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 2px solid white;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* Form styles */
+form {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    color: white;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background-color: #ffdd57;
+    color: black;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffa502;
+}
+
+/* Admin Icon (top left corner) */
+#adminIcon {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#adminIcon img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Admin Panel */
+#adminPanel {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    color: white;
+    z-index: 1001;
+    text-align: left;
+}
+
+#applicationsList {
+    list-style: none;
+    padding: 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+#applicationsList li {
+    background-color: #222;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: white;
+}

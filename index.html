@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Nation of Yoiiatin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Admin Panel Icon -->
+    <div id="adminIcon" onclick="showPasswordPrompt()">
+        <img src="yoiiatin-logo.png" alt="Admin Panel" title="Admin Panel">
+    </div>
+
+    <header>
+        <h1>Welcome to the Nation of Yoiiatin</h1>
+        <p>In Yoiiatin We Trust Yoi</p>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Yoiiatin</h2>
+            <p>Yoiiatin is a nation built on unity, peace, and trust in Yoi. Our mission is to create a community that values freedom, culture, and innovation.</p>
+        </section>
+
+        <section id="citizenship">
+            <h2>Apply for Citizenship</h2>
+            <p>Fill out the form below to apply for citizenship in Yoiiatin:</p>
+            
+            <form id="citizenshipForm">
+                <label for="fullName">Full Name:</label><br>
+                <input type="text" id="fullName" name="fullName" required><br><br>
+
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" required><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="reason">Why do you want to become a citizen of Yoiiatin?</label><br>
+                <textarea id="reason" name="reason" rows="4" required></textarea><br><br>
+
+                <input type="submit" value="Submit Application">
+            </form>
+
+            <p id="responseMessage" style="display: none; color: lightgreen; margin-top: 10px;"></p>
+        </section>
+    </main>
+
+    <!-- Admin Panel (Hidden by Default) -->
+    <div id="adminPanel" style="display: none;">
+        <h2>Yoiiatin Citizenship Applications</h2>
+        <button onclick="hideAdminPanel()">Close Panel</button>
+        <ul id="applicationsList"></ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 The Nation of Yoiiatin. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
